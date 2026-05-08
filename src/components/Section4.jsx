@@ -1,4 +1,6 @@
 import React from 'react';
+import icon01 from '../assets/icons/icon01.svg';
+import icom02 from '../assets/icons/icon02.svg';
 
 const Section4 = () => {
   return (
@@ -16,14 +18,14 @@ const Section4 = () => {
           <div className="s4-text-icons">
             <div className="s4-text-icons-num">
               <h2 className="nanum-gothic-extrabold">7,342</h2>
-              <img src="/src/assets/icons/icon02.svg" alt="번개 아이콘" />
+              <img src={icon02} alt="번개 아이콘" />
             </div>
             <p className="nanum-gothic-regular">수퍼차저</p>
           </div>
           <div className="s4-text-icons">
             <div className="s4-text-icons-num">
               <h2 className="nanum-gothic-extrabold">711</h2>
-              <img src="/src/assets/icons/icon01.svg" alt="충전아이콘" />
+              <img src={icon01} alt="충전아이콘" />
             </div>
             <p className="nanum-gothic-regular">데스티네이션 차져</p>
           </div>
