@@ -7,7 +7,6 @@ const Section3 = () => {
       <video
         //  비디오가 없을 때는 이렇게 경로를 직접 입력
         src={videoPath}
-
         controls
         loop
         autoPlay
