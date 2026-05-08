@@ -1,6 +1,6 @@
 import React from 'react';
-import icon01 from './assets/icons/icon01.svg';
-import icom02 from './assets/icons/icon02.svg';
+import icon01 from '../assets/icons/icon01.svg';
+import icon02 from '../assets/icons/icon02.svg';
 
 const Section4 = () => {
   return (
