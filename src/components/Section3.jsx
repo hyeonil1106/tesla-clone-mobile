@@ -1,11 +1,13 @@
 import React from 'react';
-// import videoPath from '../assets/media/video01.mp4'; 비디오가 없을때
+//  비디오가 없을때
+import videoPath from '../assets/media/video01.mp4';
 const Section3 = () => {
   return (
     <section id="s3">
       <video
-        // src={videoPath} 비디오가 없을 때는 이렇게 경로를 직접 입력
-        src="/src/assets/media/video01.mp4"
+        //  비디오가 없을 때는 이렇게 경로를 직접 입력
+        src={videoPath}
+
         controls
         loop
         autoPlay
