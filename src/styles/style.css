@@ -1,0 +1,357 @@
+@charset 'utf-8';
+
+:root {
+  --primary-color: #3e6ae1;
+  --white-color: #fff;
+  --black-color: #111;
+  --type-title: 40px;
+  --type-base: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+}
+
+/* 공통항목 */
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+.btn-wrap button {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 0;
+  border-radius: 4px;
+  transition: filter 0.2s;
+}
+
+.btn-wrap button:hover {
+  filter: brightness(70%);
+}
+
+.btn-blue {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn-white {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: 1px solid var(--black-color) !important;
+}
+
+.btn-black {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+/* 인디케이터 */
+.indicator {
+  padding: 16px;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.indicator > div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #8b8c8f;
+}
+
+.indicator > .active {
+  background-color: #171a20;
+}
+
+/* header 영역 */
+header {
+  background-image: url(/src/assets/images/image01.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+  height: 90vh;
+  min-height: 580px;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+}
+
+header .logo {
+  letter-spacing: 16px;
+  margin-left: 16px;
+}
+
+header .menu-icon {
+  padding: 8px 16px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+header .header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 60px;
+}
+
+header h2 {
+  text-align: center;
+  margin-bottom: auto;
+}
+
+header .btn-wrap {
+  margin-bottom: 40px;
+}
+
+/* 섹션 공통 */
+section {
+  width: 100%;
+}
+
+/* Section 1: Model Cards */
+#s1 .s1-cardlist {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+#s1 .s1-cardlist::-webkit-scrollbar {
+  display: none;
+}
+
+#s1 .item01 { background-image: url(/src/assets/images/image08.jpg); }
+#s1 .item02 { background-image: url(/src/assets/images/image09.jpg); }
+
+#s1 .s1-card {
+  flex: 0 0 calc(90% - 8px);
+  min-width: 285px;
+  aspect-ratio: 1/1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 16px;
+  color: var(--white-color);
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+}
+
+#s1 .s1-card .bottom-text .btn-wrap {
+  padding: 0;
+  margin-top: 16px;
+}
+
+/* Section 2: Experience/Accessories */
+#s2 {
+  padding: 64px 16px;
+}
+
+#s2 .s2-card {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+#s2 .s2-img {
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+
+#s2 .item01 .s2-img { background-image: url(/src/assets/images/image03.jpg); }
+#s2 .item02 .s2-img { background-image: url(/src/assets/images/image02.jpg); }
+
+#s2 .s2-text {
+  background-color: #f4f4f4;
+  padding: 24px 32px;
+}
+
+#s2 .s2-text p {
+  margin: 8px 0 16px;
+  color: #5c5e62;
+}
+
+#s2 .s2-text .btn-wrap {
+  padding: 0;
+  justify-content: flex-start;
+}
+
+#s2 .btn-white {
+  border: none !important;
+  background-color: #fff;
+  width: 400px;
+  padding: 8px;
+}
+
+/* Section 3: Video */
+#s3 {
+  padding: 16px;
+  height: 70vh;
+  min-height: 475px;
+  position: relative;
+}
+
+#s3 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+#s3 .s3-text {
+  position: absolute;
+  bottom: 80px;
+  left: 32px;
+  color: var(--white-color);
+  width: calc(100% - 64px);
+}
+
+#s3 .btn-wrap {
+  padding: 0;
+  justify-content: flex-start;
+  margin-top: 16px;
+}
+
+#s3 .btn-wrap button {
+  width: 160px;
+}
+
+/* Section 4: Charging */
+#s4 .s4-img {
+  height: 400px;
+  background-image: url(/src/assets/images/image04.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#s4 .s4-text {
+  padding: 48px 24px;
+}
+
+#s4 .s4-text-1 p {
+  margin-top: 12px;
+  color: #5c5e62;
+  line-height: 1.5;
+}
+
+#s4 .s4-text-2 {
+  display: flex;
+  gap: 40px;
+  padding: 32px 0;
+}
+
+#s4 .s4-text-icons-num {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#s4 .s4-text-icons-num img {
+  min-width: 48px;
+  max-width: 100px;
+}
+
+#s4 .s4-text-icons p {
+  color: #5c5e62;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+#s4 .btn-wrap {
+  flex-direction: column;
+  padding: 0;
+  gap: 12px;
+}
+
+/* Section 5: Energy */
+#s5 .s5-cardlist {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+#s5 .item01 { background-image: url(/src/assets/images/image06.jpg); }
+#s5 .item02 { background-image: url(/src/assets/images/image07.jpg); }
+
+#s5 .s5-card {
+  flex: 0 0 calc(90% - 8px);
+  min-width: 285px;
+  aspect-ratio: 1/1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px 16px;
+  color: var(--white-color);
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+}
+
+#s5 .s5-card p {
+  margin: 8px 0 16px;
+}
+
+#s5 .btn-wrap {
+  padding: 0;
+  justify-content: flex-start;
+}
+
+#s5 .btn-blue {
+  width: 180px;
+}
+
+/* Footer */
+footer {
+  padding: 64px 16px;
+  text-align: center;
+  background-color: var(--white-color);
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+footer li {
+  color: #5c5e62;
+  font-size: 14px;
+}
+
+/* 반응형 모바일 기준 데스크탑 처리 */
+@media screen and (min-width: 768px) {
+  #s1 .s1-card, #s5 .s5-card {
+    flex: 1;
+  }
+  
+  #s4 .btn-wrap {
+    flex-direction: row;
+  }
+  
+  footer ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+}
